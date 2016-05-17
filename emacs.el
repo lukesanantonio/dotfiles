@@ -112,6 +112,11 @@
 (require 'highlight-numbers)
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
 
+(require 'linum-relative)
+(add-hook 'prog-mode-hook 'linum-relative-mode)
+(setq linum-relative-current-symbol "")
+(setq linum-relative-format "%4s ")
+
 (require 'glsl-mode)
 (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
