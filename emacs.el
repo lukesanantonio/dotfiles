@@ -26,8 +26,8 @@
 
 ;; Theme
 
-(require 'gruvbox-theme)
-(load-theme 'gruvbox t)
+(require 'zenburn-theme)
+(load-theme 'zenburn t)
 
 ;; Set up whitespace handling
 (require 'ethan-wspace)
