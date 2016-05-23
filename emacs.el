@@ -148,6 +148,12 @@
 (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
 
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+
+(setq lua-indent-level 4)
+
 ;; Viciously stolen from: http://stackoverflow.com/questions/3312114
 ;; "how-to-tell-emacs-to-open-h-file-in-c-mode"
 
