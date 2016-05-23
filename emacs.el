@@ -59,6 +59,7 @@
 (setq helm-ls-git-fuzzy-match t)
 (setq helm-find-files-fuzzy-match t)
 (setq helm-ff-auto-update-initial-value t)
+(setq helm-buffers-fuzzy-matching t)
 
 ;; Magit
 (require 'magit)
