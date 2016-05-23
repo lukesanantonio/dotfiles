@@ -68,9 +68,19 @@
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
 (global-magit-file-mode t)
 
+;; This should really be set by default
+;(setq evil-shift-width 2)
+
 ;; Evil mode
-(require 'evil)
-(evil-mode t)
+;(require 'evil-leader)
+;(global-evil-leader-mode)
+
+;(evil-leader/set-key "p" 'helm-browse-project)
+;(evil-leader/set-key "x" 'helm-find-files)
+;(evil-leader/set-key "n" 'neotree-toggle)
+
+;(require 'evil)
+;(evil-mode t)
 
 ;; Neat semantic stuff
 (semantic-mode t)
@@ -102,8 +112,6 @@
 
 ;; C / C++ Style
 (setq c-default-style "bsd" c-basic-offset 2)
-;; This should really be set by default
-(setq evil-shift-width 2)
 
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
