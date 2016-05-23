@@ -142,7 +142,7 @@
 (setq linum-relative-current-symbol "")
 (setq linum-relative-format "%4s ")
 
-(require 'glsl-mode)
+(autoload 'glsl-mode "glsl-mode" "GLSL editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
