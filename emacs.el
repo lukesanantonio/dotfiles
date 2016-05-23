@@ -148,6 +148,30 @@
 (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
 
+;; Viciously stolen from: http://stackoverflow.com/questions/3312114
+;; "how-to-tell-emacs-to-open-h-file-in-c-mode"
+
+;; function decides whether .h file is C or C++ header, sets C++ by default
+;; because there's more chance of there being a .h without a .cc than a .h
+;; without a .c (ie. for C++ template files)
+(defun c-c++-header ()
+  "sets either c-mode or c++-mode, whichever is appropriate for header"
+  (interactive)
+  (let ((c-file (concat (substring (buffer-file-name) 0 -1) "c")))
+    (if (file-exists-p c-file)
+        (c-mode)
+      (c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c-c++-header))
+
+;; and if that doesn't work, a function to toggle between c-mode and c++-mode
+(defun c-c++-toggle ()
+  "toggles between c-mode and c++-mode"
+  (interactive)
+  (cond ((string= major-mode "c-mode")
+         (c++-mode))
+        ((string= major-mode "c++-mode")
+         (c-mode))))
+
 ;; Generated config
 
 (custom-set-variables
