@@ -34,6 +34,15 @@
 (setq mode-require-final-newline nil)
 (global-ethan-wspace-mode t)
 
+;; Neotree
+
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+(setq neo-smart-open 1)
+(setq neo-theme 'nerd)
+(setq neo-mode-line-type 'neotree)
+(setq neo-window-width 30)
+
 ;; Initialize helm
 
 (require 'helm-config)
