@@ -1,3 +1,18 @@
+;; Generated config
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("a802c77b818597cc90e10d56e5b66945c57776f036482a033866f5f506257bca" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+ '(safe-local-variable-values
+   (quote
+    ((flycheck-clang-language-standard . c++1y)
+     (cmake-ide-build-dir . "../engine-build")))))
+
 ;; Do as much visual stuff as possible first
 
 ;; Use Iosevka font and make it a little larger.
@@ -188,15 +203,3 @@
          (c++-mode))
         ((string= major-mode "c++-mode")
          (c-mode))))
-
-;; Generated config
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(safe-local-variable-values
-   (quote
-    ((flycheck-clang-language-standard . c++1y)
-     (cmake-ide-build-dir . "../engine-build")))))
