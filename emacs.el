@@ -92,6 +92,7 @@
 (semantic-mode t)
 (global-semantic-stickyfunc-mode t)
 (global-semantic-highlight-func-mode t)
+(require 'stickyfunc-enhance)
 
 ;; Flycheck
 (require 'flycheck)
