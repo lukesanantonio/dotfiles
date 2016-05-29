@@ -18,12 +18,16 @@
   (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
 
-
-
 ;; Theme
 
-(require 'zenburn-theme)
-(load-theme 'zenburn t)
+(require 'ample-theme)
+(load-theme 'ample-flat t t)
+(enable-theme 'ample-flat)
+
+;; Pretty up the header-line
+(set-face-attribute 'header-line nil :background "gray10"
+                                     :foreground (face-foreground 'default))
+
 
 ;; Configure the modeline
 
