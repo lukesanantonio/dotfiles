@@ -12,23 +12,24 @@
 
 ;; Initialize package.el
 (require 'package)
-(add-to-list 'load-path "~/.emacs.d/packages/powerline")
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
 
-;; Set up powerline
 
-(require 'powerline)
-(setq powerline-default-separator 'utf-8)
-(powerline-default-theme)
 
 ;; Theme
 
 (require 'zenburn-theme)
 (load-theme 'zenburn t)
+
+;; Configure the modeline
+
+(require 'smart-mode-line)
+(setq sml/theme 'powerline)
+(sml/setup)
 
 ;; Set up whitespace handling
 (require 'ethan-wspace)
