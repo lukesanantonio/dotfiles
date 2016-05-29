@@ -1,13 +1,14 @@
 ;; Do as much visual stuff as possible first
 
+;; Use Iosevka font and make it a little larger.
+(set-face-attribute 'default nil :height 120 :family "Iosevka Term")
+
 ;; Disable the menu, toolbar, and scrollbar
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
 (setq inhibit-startup-screen t)
-
-(custom-set-faces '(default ((t (:family "Iosevka Term")))))
 
 ;; Initialize package.el
 (require 'package)
