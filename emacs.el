@@ -57,6 +57,11 @@
 (setq mode-require-final-newline nil)
 (global-ethan-wspace-mode t)
 
+;; Makefiles should work
+(defun makefile-tabs-are-less-evil ()
+  (setq ethan-wspace-errors (remove 'tabs ethan-wspace-errors)))
+(add-hook 'makefile-mode-hook 'makefile-tabs-are-less-evil)
+
 ;; Ace-window
 (require 'ace-window)
 (global-set-key (kbd "M-p") 'ace-window)
