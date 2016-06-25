@@ -79,20 +79,21 @@
 ;; Initialize helm
 
 (require 'helm-config)
-(require 'helm-ls-git)
+(setq helm-mode-fuzzy-match t)
+(helm-mode 1)
+
+(require 'helm-projectile)
+(helm-projectile-on)
+(require 'projectile)
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
 
 ;; Helm bindings + settings
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-x C-p") 'helm-browse-project)
+(global-set-key (kbd "C-x C-p") 'helm-projectile)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-
-(setq helm-M-x-fuzzy-match t)
-(setq helm-ls-git-fuzzy-match t)
-(setq helm-find-files-fuzzy-match t)
-(setq helm-ff-auto-update-initial-value t)
-(setq helm-buffers-fuzzy-matching t)
 
 ;; Magit
 (require 'magit)
