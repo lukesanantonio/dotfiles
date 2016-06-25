@@ -192,6 +192,9 @@
 (require 'modern-cpp-font-lock)
 (add-hook 'c++-mode-hook #'modern-c++-font-lock-mode)
 
+;; Load asciidoc mode
+(autoload 'adoc-mode "adoc-mode" nil t)
+
 ;; Viciously stolen from: http://stackoverflow.com/questions/3312114
 ;; "how-to-tell-emacs-to-open-h-file-in-c-mode"
 
