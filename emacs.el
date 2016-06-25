@@ -37,19 +37,18 @@
 
 ;; Theme
 
-(require 'ample-theme)
-(load-theme 'ample-flat t t)
-(enable-theme 'ample-flat)
+(require 'solarized-theme)
+(load-theme 'solarized-light t)
 
 ;; Pretty up the header-line
-(set-face-attribute 'header-line nil :background "gray10"
-                                     :foreground (face-foreground 'default))
+; (set-face-attribute 'header-line nil :background "gray10"
+;                                      :foreground (face-foreground 'default))
 
 
 ;; Configure the modeline
 
 (require 'smart-mode-line)
-(setq sml/theme 'powerline)
+(setq sml/theme 'light)
 (sml/setup)
 
 ;; Set up whitespace handling
