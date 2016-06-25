@@ -18,7 +18,7 @@
 ;; Do as much visual stuff as possible first
 
 ;; Use Iosevka font and make it a little larger.
-(set-face-attribute 'default nil :height 120 :family "Iosevka Term")
+(set-face-attribute 'default nil :height 110 :family "Iosevka Term")
 
 ;; Disable the menu, toolbar, and scrollbar
 (tool-bar-mode -1)
