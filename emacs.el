@@ -182,6 +182,8 @@
 (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.vs\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.fs\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
 
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
@@ -196,6 +198,8 @@
 
 ;; Load asciidoc mode
 (autoload 'adoc-mode "adoc-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.adoc$" . adoc-mode))
+(add-to-list 'auto-mode-alist '("\\.asciidoc$" . adoc-mode))
 
 ;; Viciously stolen from: http://stackoverflow.com/questions/3312114
 ;; "how-to-tell-emacs-to-open-h-file-in-c-mode"
