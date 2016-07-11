@@ -18,8 +18,8 @@
 
 ;; Do as much visual stuff as possible first
 
-;; Use Iosevka font and make it a little larger.
-(set-face-attribute 'default nil :height 110 :family "Iosevka Term")
+;; Use Mononoki font
+(set-face-attribute 'default nil :height 100 :family "Mononoki")
 
 ;; Disable the menu, toolbar, and scrollbar
 (tool-bar-mode -1)
