@@ -38,8 +38,8 @@
 
 ;; Theme
 
-(require 'ample-theme)
-(load-theme 'ample-flat t)
+(require 'base16-tomorrow-dark-theme)
+(load-theme 'base16-twilight-dark t)
 
 ;; Pretty up the header-line
 (set-face-attribute 'header-line nil :background "gray10"
