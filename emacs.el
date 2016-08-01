@@ -124,8 +124,8 @@
 (require 'stickyfunc-enhance)
 
 ;; Flycheck
-(require 'flycheck)
-(global-flycheck-mode t)
+; (require 'flycheck)
+; (global-flycheck-mode t)
 
 ;; CMake stuff
 (require 'cmake-mode)
