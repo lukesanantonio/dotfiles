@@ -139,9 +139,9 @@
 (autoload 'cmake-font-lock-activate "cmake-font-lock" nil t)
 (add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
 
-(require 'cl)
-(require 'cmake-ide)
-(cmake-ide-setup)
+; (require 'cl)
+; (require 'cmake-ide)
+; (cmake-ide-setup)
 
 ;; Other
 
