@@ -38,8 +38,8 @@
 
 ;; Theme
 
-(require 'base16-tomorrow-dark-theme)
-(load-theme 'base16-twilight-dark t)
+(require 'base16-paraiso-dark-theme)
+(load-theme 'base16-paraiso-dark t)
 
 ;; Pretty up the header-line
 (set-face-attribute 'header-line nil :background "gray10"
