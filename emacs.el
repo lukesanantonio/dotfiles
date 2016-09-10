@@ -83,10 +83,11 @@
 (setq helm-mode-fuzzy-match t)
 (helm-mode 1)
 
-(require 'helm-projectile)
-(helm-projectile-on)
 (require 'projectile)
 (projectile-global-mode)
+(require 'helm-projectile)
+(helm-projectile-on)
+
 (setq projectile-completion-system 'helm)
 
 ;; Helm bindings + settings
