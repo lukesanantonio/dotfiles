@@ -19,7 +19,7 @@
 ;; Do as much visual stuff as possible first
 
 ;; Use Mononoki font
-(set-face-attribute 'default nil :height 100 :family "Mononoki")
+(set-face-attribute 'default nil :height 130 :family "Fira Mono")
 
 ;; Disable the menu, toolbar, and scrollbar
 (tool-bar-mode -1)
@@ -38,8 +38,8 @@
 
 ;; Theme
 
-(require 'base16-paraiso-dark-theme)
-(load-theme 'base16-paraiso-dark t)
+(require 'base16-ocean-theme)
+(load-theme 'base16-ocean t)
 
 ;; Pretty up the header-line
 (set-face-attribute 'header-line nil :background "gray10"
