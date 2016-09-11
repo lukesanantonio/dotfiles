@@ -38,18 +38,21 @@
 
 ;; Theme
 
-(require 'base16-ocean-theme)
-(load-theme 'base16-ocean t)
+(require 'base16-mocha-theme)
+(load-theme 'base16-mocha t)
+
+;(require 'moe-theme)
+;(moe-dark)
 
 ;; Pretty up the header-line
-(set-face-attribute 'header-line nil :background "gray10"
-                                     :foreground (face-foreground 'default))
+;(set-face-attribute 'header-line nil :background "gray10"
+;                                     :foreground (face-foreground 'default))
 
 
 ;; Configure the modeline
 
 (require 'smart-mode-line)
-(setq sml/theme 'dark)
+(setq sml/theme 'respectful)
 (sml/setup)
 
 ;; Set up whitespace handling
