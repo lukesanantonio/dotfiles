@@ -28,6 +28,9 @@
 
 (setq inhibit-startup-screen t)
 
+;; Some settings
+(setq mouse-wheel-progressive-speed nil)
+
 ;; Initialize package.el
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
