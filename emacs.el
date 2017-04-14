@@ -41,11 +41,8 @@
 
 ;; Theme
 
-(require 'base16-mocha-theme)
-(load-theme 'base16-mocha t)
+(load-theme 'leuven t)
 
-;(require 'moe-theme)
-;(moe-dark)
 
 ;; Pretty up the header-line
 ;(set-face-attribute 'header-line nil :background "gray10"
@@ -55,7 +52,7 @@
 ;; Configure the modeline
 
 (require 'smart-mode-line)
-(setq sml/theme 'respectful)
+(setq sml/theme 'light)
 (sml/setup)
 
 ;; Set up whitespace handling
