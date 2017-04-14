@@ -18,8 +18,8 @@
 
 ;; Do as much visual stuff as possible first
 
-;; Use Mononoki font
-(set-face-attribute 'default nil :height 130 :family "Fira Mono")
+;; Use Hack font
+(set-face-attribute 'default nil :height 110 :family "Hack")
 
 ;; Disable the menu, toolbar, and scrollbar
 (tool-bar-mode -1)
