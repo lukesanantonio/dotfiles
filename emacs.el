@@ -128,8 +128,10 @@
 (require 'stickyfunc-enhance)
 
 ;; Flycheck
-; (require 'flycheck)
-; (global-flycheck-mode t)
+(require 'flycheck)
+
+;; Turn on flychecking globally
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; CMake stuff
 (require 'cmake-mode)
