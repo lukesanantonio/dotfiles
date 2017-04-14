@@ -207,6 +207,9 @@
 (add-to-list 'auto-mode-alist '("\\.adoc$" . adoc-mode))
 (add-to-list 'auto-mode-alist '("\\.asciidoc$" . adoc-mode))
 
+;; API blueprint
+(add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
+
 ;; Viciously stolen from: http://stackoverflow.com/questions/3312114
 ;; "how-to-tell-emacs-to-open-h-file-in-c-mode"
 
