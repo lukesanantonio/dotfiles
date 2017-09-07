@@ -7,10 +7,11 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("a802c77b818597cc90e10d56e5b66945c57776f036482a033866f5f506257bca"
-     "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e"
-     default)))
+    ("a802c77b818597cc90e10d56e5b66945c57776f036482a033866f5f506257bca" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(mouse-wheel-progressive-speed nil)
+ '(package-selected-packages
+   (quote
+    (leuven-theme zenburn-theme stickyfunc-enhance solarized-theme smart-mode-line-powerline-theme rainbow-delimiters neotree modern-cpp-font-lock material-theme magit lua-mode linum-relative highlight-numbers helm-projectile helm-project-persist helm-ls-git gruvbox-theme glsl-mode flycheck evil ethan-wspace darktooth-theme column-enforce-mode color-theme cmake-ide cmake-font-lock basic-theme base16-theme ample-theme adoc-mode ace-window)))
  '(safe-local-variable-values
    (quote
     ((flycheck-clang-language-standard . c++1y)
@@ -19,7 +20,7 @@
 ;; Do as much visual stuff as possible first
 
 ;; Use Hack font
-(set-face-attribute 'default nil :height 110 :family "Hack")
+(set-face-attribute 'default nil :height 90 :family "Iosevka Term")
 
 ;; Disable the menu, toolbar, and scrollbar
 (tool-bar-mode -1)
